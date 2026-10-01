@@ -1,0 +1,98 @@
+@import "tailwindcss"; 
+@plugin "daisyui"{
+   themes: light --default ;
+}; 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.bg-grid-blue {
+  background-color: #0038e0;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 120px 120px;
+  background-position: -40px 0;
+} 
+.testimonial-bg {
+  background-color: #fafafa;
+  background-image:
+    /* majhkhane lime glow  */
+    radial-gradient(ellipse 30% 40% at 50% 27%, rgba(222, 250, 80, 0.8) 0%, rgba(222, 250, 80, 0) 100%),
+    /* dan dik e lime glow */
+    radial-gradient(ellipse 16% 24% at 100% 40%, rgba(222, 250, 80, 0.7) 0%, rgba(222, 250, 80, 0) 100%),
+    /* bam niche blue glow */
+    radial-gradient(ellipse 24% 38% at 3% 92%, rgba(170, 190, 245, 0.8) 0%, rgba(170, 190, 245, 0) 100%);
+  background-repeat: no-repeat;
+} 
+.bg-soft-glow {
+  background-color: #f8f9fc;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(212, 245, 60, 0.45) 0%, rgba(212, 245, 60, 0) 38%),
+    radial-gradient(circle at 0% 95%, rgba(150, 170, 255, 0.35) 0%, rgba(150, 170, 255, 0) 30%),
+    radial-gradient(circle at 100% 70%, rgba(190, 200, 255, 0.35) 0%, rgba(190, 200, 255, 0) 35%);
+} 
+:root {
+  --brand-lime: #d4f21a;
+  --brand-blue: #0a38e8;
+  --section-bg: #fafafc;
+  --glow-lime: rgba(212, 242, 26, 0.6);
+  --glow-blue: rgba(184, 199, 240, 0.8);
+}
+
+/* main section - eta missing chilo */
+.create-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--section-bg);
+  padding: 96px 0;
+}
+
+/* lime glow - bottom left */
+.create-section::before {
+  content: "";
+  position: absolute;
+  left: -160px;
+  bottom: -160px;
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background: var(--glow-lime);
+  filter: blur(130px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* blue glow - bottom right */
+.create-section::after {
+  content: "";
+  position: absolute;
+  right: -128px;
+  bottom: -190px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--glow-blue);
+  filter: blur(140px);
+  z-index: -1;
+  pointer-events: none;
+}
