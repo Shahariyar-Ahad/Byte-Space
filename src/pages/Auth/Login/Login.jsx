@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router';
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';

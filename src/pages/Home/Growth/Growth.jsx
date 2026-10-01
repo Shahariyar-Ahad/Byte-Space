@@ -1,7 +1,7 @@
 
 import student from '../../../assets/ByteSpace.png';
 import FloatingCards from '../../../Components/Floating/FloatingCard';
-import spiral from '../../../assets/spring.png';
+
 import progressCard from '../../../assets/Auto Layout Vertical (1).png';
 
 const Growth = () => {
