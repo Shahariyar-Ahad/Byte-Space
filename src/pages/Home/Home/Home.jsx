@@ -9,6 +9,7 @@ import Cta from '../CTA/Cta';
 import Testimonial from '../Testimonial/Testimonial';
 import Hero from '../Hero/Hero';
 import Growth from '../Growth/Growth';
+import CreateAndManage from '../CreateAndManage/CreateAndManage';
 
 const coursesPromise = fetch('/Courses.json').then(res => res.json());
 const servicesPromise = fetch('/service.json').then(res => res.json());
@@ -24,6 +25,7 @@ const Home = () => {
           
             <AllServices servicesPromise={servicesPromise}></AllServices>
              <Growth></Growth>
+             <CreateAndManage></CreateAndManage>
              <Cta></Cta>
              <Testimonial></Testimonial>
         </div>

@@ -49,4 +49,50 @@
     radial-gradient(circle at 12% 8%, rgba(212, 245, 60, 0.45) 0%, rgba(212, 245, 60, 0) 38%),
     radial-gradient(circle at 0% 95%, rgba(150, 170, 255, 0.35) 0%, rgba(150, 170, 255, 0) 30%),
     radial-gradient(circle at 100% 70%, rgba(190, 200, 255, 0.35) 0%, rgba(190, 200, 255, 0) 35%);
+} 
+:root {
+  --brand-lime: #d4f21a;
+  --brand-blue: #0a38e8;
+  --section-bg: #fafafc;
+  --glow-lime: rgba(212, 242, 26, 0.6);
+  --glow-blue: rgba(184, 199, 240, 0.8);
+}
+
+/* main section - eta missing chilo */
+.create-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--section-bg);
+  padding: 96px 0;
+}
+
+/* lime glow - bottom left */
+.create-section::before {
+  content: "";
+  position: absolute;
+  left: -160px;
+  bottom: -160px;
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background: var(--glow-lime);
+  filter: blur(130px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* blue glow - bottom right */
+.create-section::after {
+  content: "";
+  position: absolute;
+  right: -128px;
+  bottom: -190px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: var(--glow-blue);
+  filter: blur(140px);
+  z-index: -1;
+  pointer-events: none;
 }
