@@ -1,6 +1,6 @@
 import girls from "../../../assets/girls.png";
 import spring from "../../../assets/spring.png";
-import HappyStudents from "../../../Components/Happy/HappyStudents";
+import HappyStudents from "../../../Components/Happystudents/HappyStudents";
 
 
 
