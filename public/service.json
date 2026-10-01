@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Design",
+    "slug": "design",
+    "icon": "/src/assets/service1.png"
+  },
+  {
+    "id": 2,
+    "name": "Development",
+    "slug": "development",
+    "icon": "/src/assets/service2.png"
+  },
+  {
+    "id": 3,
+    "name": "IT & Software",
+    "slug": "it-software",
+    "icon": "/src/assets/service3.png"
+  },
+  {
+    "id": 4,
+    "name": "Business",
+    "slug": "business",
+    "icon": "/src/assets/service4.png"
+  },
+  {
+    "id": 5,
+    "name": "Marketing",
+    "slug": "marketing",
+    "icon": "/src/assets/service5.png"
+  },
+  {
+    "id": 6,
+    "name": "Photography",
+    "slug": "photography",
+    "icon": "/src/assets/service6.png"
+  }
+]
