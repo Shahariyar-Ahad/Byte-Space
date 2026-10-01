@@ -1,6 +1,7 @@
 import girls from "../../../assets/girls.png";
 import spring from "../../../assets/spring.png";
-import HappyStudents from "../../../Components/Happystudents/HappyStudents";
+import HappyStudents from "../../../Components/Happy/HappyStudents";
+
 
 
 
@@ -60,7 +61,7 @@ const CreateAndManage = () => {
 
           {/* Happy Students card */}
           <div className="absolute bottom-10 right-0 z-20">
-          <HappyStudents></HappyStudents>
+         <HappyStudents></HappyStudents>
           </div>
         </div>
 
