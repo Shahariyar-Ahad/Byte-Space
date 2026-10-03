@@ -13,12 +13,12 @@ const Card = ({ course }) => {
     } = course;
 
     const reviewImage = [
-        "../src/assets/Ellipse.png",
-        "../src/assets/Ellipse (1).png",
-        "../src/assets/Ellipse (2).png",
-        "../src/assets/Ellipse (3).png",
-        "../src/assets/Ellipse (4).png",
-    ];
+    "/reviews/review1.png",
+    "/reviews/review2.png",
+    "/reviews/review3.png",
+    "/reviews/review4.png",
+    "/reviews/review5.png",
+];
 
     return (
         <div className="w-full">
